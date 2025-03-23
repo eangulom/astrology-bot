@@ -65,3 +65,8 @@ client.on(Events.InteractionCreate, async (interaction) => {
 
 // Log in to Discord with your client's token
 client.login(token);
+
+//Log errors
+process.on("unhandledRejection", (error) => {
+  console.error("Unhandled promise rejection:", error);
+});
