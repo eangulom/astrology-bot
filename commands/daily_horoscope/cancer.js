@@ -7,7 +7,7 @@ module.exports = {
     .setDescription("Get your daily Horoscope for Cancer"),
   async execute(interaction) {
     const data = await fetchAndParse(
-      "https://cafeastrology.com/cancerdailyhoroscope.html",
+      "https://www.astrology.com/horoscope/daily/cancer.html",
     );
 
     await interaction.reply(data);

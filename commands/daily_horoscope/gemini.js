@@ -7,7 +7,7 @@ module.exports = {
     .setDescription("Get your daily Horoscope for Gemini"),
   async execute(interaction) {
     const data = await fetchAndParse(
-      "https://cafeastrology.com/geminidailyhoroscope.html",
+      "https://www.astrology.com/horoscope/daily/gemini.html",
     );
 
     await interaction.reply(data);

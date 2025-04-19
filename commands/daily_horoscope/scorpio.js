@@ -7,7 +7,7 @@ module.exports = {
     .setDescription("Get your daily Horoscope for Scorpio"),
   async execute(interaction) {
     const data = await fetchAndParse(
-      "https://cafeastrology.com/scorpiodailyhoroscope.html",
+      "https://www.astrology.com/horoscope/daily/scorpio.html",
     );
 
     await interaction.reply(data);

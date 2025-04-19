@@ -7,7 +7,7 @@ module.exports = {
     .setDescription("Get your daily Horoscope for Pisces"),
   async execute(interaction) {
     const data = await fetchAndParse(
-      "https://cafeastrology.com/piscesdailyhoroscope.html",
+      "https://www.astrology.com/horoscope/daily/pisces.html",
     );
 
     await interaction.reply(data);
